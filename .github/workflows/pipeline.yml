@@ -35,3 +35,4 @@ jobs:
           heroku_email: "wannasz86@gmail.com"
           healthcheck: "https://fullstackopen-pokedex-quak.herokuapp.com/health"
           checkstring: "ok"
+          rollbackonhealthcheckfailed: true
