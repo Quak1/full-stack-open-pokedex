@@ -11,7 +11,7 @@ app.get('/health', (_, res) => {
 })
 
 app.get('/version', (_, res) => {
-  res.send('test 11') // change this string to ensure a new version deployed
+  res.send('test 12') // change this string to ensure a new version deployed
 })
 
 app.get('/hello', (_, res) => {
