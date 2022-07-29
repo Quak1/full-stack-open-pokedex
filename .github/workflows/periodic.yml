@@ -1,0 +1,14 @@
+name: Periodic Health check
+
+on:
+  schedule:
+    - cron: "0/5 * * * *"
+
+jobs:
+  check_site_health:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Check site health
+        uses: jtalk/url-health-check-action@v2
+        with:
+          url: https://fullstackopen-pokedex-quak.herokuapp.com/check
